@@ -14,5 +14,8 @@ print ".:{%.2f}".format(salario);
 
       "\nfaturamento mensal:"+str((c1.getSalario()-c1.getInvestimento())/c1.getMonths())
 
+import file from other package
+extends
+java construtor com this apenaas
 '''
 
