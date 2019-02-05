@@ -1,15 +1,23 @@
 from conta import conta;
 from empresas import empresas;
+from pessoa import pessoa;
 
-#Users Information
+#Users inormation
+p1=pessoa();
+p1.setNome("alxsy mostovik")
+p1.setEmail("alxsyMostovik@asapo.pt")
+#Accounts Information
 c1 = conta();
-c1.setSalario(float(4000));
+c1.setSalario(4000.00);
+c1.setInvestimento(2500.00);
 c1.setMonths(12)
-c1.setPercentualDeNegocio(round(3,2))
-c1.setInvestimento(round(2500,2));
-dias=30;
-real=180/9;
-diaria=50;
+c1.setPercentualDeNegocio(3)
+c1.setTipoConta("basica");
+diasUteis=30;
+diaria=50.00;
+
+
+
 
 #Companies Information
 emp= empresas();
@@ -23,7 +31,7 @@ print "salario:" + str(c1.getSalario()) + \
 
 
 
-print str(c1.months)+" meses,equivalente a "+str(c1.months*dias)+" dias,onde tudo pode occurer!";
+print str(c1.months)+" meses,equivalente a "+str(c1.months*diasUteis)+" diasUteis,onde tudo pode occurer!";
 if (((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30<diaria):
     print "sinceramente!,pessimo investimento";
 else:
@@ -31,3 +39,4 @@ else:
 
 print "cada dia equivale a {:.2f}".format(((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30);
 
+;
