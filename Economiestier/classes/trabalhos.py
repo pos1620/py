@@ -32,3 +32,9 @@ class trabalhos:
 
     def getTempoo(self):
         return self.tempo
+
+
+
+
+    def TempoServico(self):
+        return (self.getTermino()-self.getInicio())
