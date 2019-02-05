@@ -7,6 +7,27 @@ class conta:
 
 
 
+
+
+    def __init__(self,salario,investimento,percentual,months,tipoConta):
+        self.salario=salario;
+        self.investimento=investimento;
+        self.percentual=percentual;
+        self.months=months;
+        self.tipoConta=tipoConta;
+
+
+    def __init__(self):
+        self.salario="";
+        self.investimento="";
+        self.percentual="";
+        self.months="";
+        self.tipoConta="";
+
+
+    #def __init__(self,salario="",investimento="",percentual="",months="",tipoConta=""):
+
+
     def getSalario(self):
         return self.salario;
 

@@ -5,6 +5,18 @@ class trabalhos:
     tempo=None;
 
 
+    def __init__(self,valor,inicio,termino):
+        self.valor=valor;
+        self.inicio=inicio;
+        self.terminno=termino;
+
+
+
+    def __init__(self):
+        self.valor;
+        self.inicio;
+        self.termino;
+
 
     def setValor(self,valor):
         self.valor=self;

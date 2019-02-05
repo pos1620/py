@@ -12,6 +12,16 @@ class empresas:
         self.email=email;
         self.phone=phone;
 
+
+
+    def __init__(self):
+        self.nome;
+        self.endereco;
+        self.email;
+        self.phone;
+
+
+
     def setNome(self,nome):
         self.nome=nome;
 
