@@ -1,4 +1,5 @@
-class empresas:
+from conta import conta;
+class empresas(conta):
     nome=None;
     endereco=None;
     email=None;

@@ -1,15 +1,12 @@
 class conta:
-    salario =None;
+    salario=None;
     investimento=None;
     percentualDeNegocio=1;
     months="";
     tipoConta=None;
 
 
-
-
-
-    def __init__(self,salario,investimento,percentual,months,tipoConta):
+def __init__(self,salario,investimento,percentual,months,tipoConta):
         self.salario=salario;
         self.investimento=investimento;
         self.percentual=percentual;
