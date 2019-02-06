@@ -14,7 +14,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="title">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -32,70 +32,17 @@
     <string>Economistier</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLabel" name="sms">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>80</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>170</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
+     <x>50</x>
      <y>110</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>140</y>
-     <width>113</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>170</y>
-     <width>75</width>
-     <height>23</height>
+     <width>311</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="text">
-    <string>Calculate</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>170</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Economiester,projeto inicial para quem decidu GANHAR dinheiro investindo em bons negócios.&lt;/p&gt;&lt;p&gt;Avaliando riscos,lucro,retorno,probabilidade de fracasso,de sucesso!&lt;/p&gt;&lt;p&gt;permita-nos sermos o seu gestor &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;	Aplicação não Oicial&lt;/p&gt;&lt;p&gt;		desenvolvido por:AlexsyMostovik&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>
