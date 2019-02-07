@@ -1,8 +1,13 @@
 #coding:utf-8
-from conta import conta;
-from empresas import empresas;
-from pessoa import pessoa;
+from empresarial.conta import conta;
+from empresarial.empresas import empresas;
+from empresarial.pessoa import pessoa;
+#import sys
+#sys.path.append('./Pessoal')
+#from Pessoal.dividas
+import Pessoal.dividas
 
+d1 = pessoa()
 p1 = pessoa();
 emp = empresas();
 c1 = conta();
@@ -22,6 +27,9 @@ def cad(ob):
         c1.setMonths(int(raw_input("quantidade de meses em investimento:")))
         c1.setPercentualDeNegocio(float(raw_input("Percenteual de Negocio:")))
         c1.setTipoConta(raw_input("Tipo de conta:"));
+        d1.setNome(raw_input("Tipo da Conta a Pagar:"))
+        d1.setValor(float(raw_input("Valor da Conta a Pagar:")))
+
     else:
         # Companies Information
         emp.setNome("GoldxEngenharia");
@@ -38,18 +46,18 @@ def cad(ob):
 
 cad(c1);
 
-
-
-
-
 #main
 print "Welcome to Economiester,Gestão Financeira"
 print "Nome:"+p1.getNome()+\
       "\nEmail:"+p1.getEmail()
 print "salario:%.2f" %c1.getSalario()+ \
+      "Saldo:%.2f"%(c1.getSalario()-d1.getValor())+\
       "\ninvestimento:%.2f" %c1.getInvestimento() + \
       "\nlucro em " + str(c1.getMonths()) + " meses:" + str(c1.getSalario() - c1.getInvestimento()) + \
       "\nfaturamento mensal:%.2f" % ((c1.getSalario() - c1.getInvestimento()) / c1.getMonths());
+
+
+
 
 
 
@@ -62,7 +70,7 @@ print "cada dia equivale a {:.2f}".format(((c1.getSalario() - c1.getInvestimento
 
 #company
 
-if (((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30<diaria):print "oi"
+if (((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30<diaria):print d1.getNome()
 else: print "quem sabe pode valer a pena!";
 
 
