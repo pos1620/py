@@ -3,22 +3,22 @@ class dividas:
     valorConta=None
 
 
-    def __init__(self):
-        pass
-
     def __init__(self,nomeConta,valorConta):
         self.nomeConta=nomeConta
-        self.valor=valorConta
+        self.valorConta=valorConta
 
-    def setNome(self,nomeConta):
+    def __init__(self):
+        self
+
+    def setNomeConta(self,nomeConta):
         self.nome=nomeConta
 
-    def getNome(self):
+    def getNomeConta(self):
         return self.nomeConta
 
 
-    def setValor(self,valorConta):
+    def setValorConta(self,valorConta):
         self.valorConta=valorConta
 
-    def getValor(self):
+    def getValorConta(self):
         return self.valorConta
