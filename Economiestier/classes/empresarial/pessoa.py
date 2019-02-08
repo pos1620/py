@@ -34,6 +34,7 @@ class pessoa(conta):
         self.email=email;
 
     def getEmail(self):
+        self.email=self.getNome()+"@Economiester.com"
         return self.email;
 
 

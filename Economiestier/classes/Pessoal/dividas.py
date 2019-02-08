@@ -1,7 +1,7 @@
-class dividas:
+class dividas():
     nomeConta=None
     valorConta=None
-
+    percentualDeNegocio = 3 / 100;
 
     def __init__(self,nomeConta,valorConta):
         self.nomeConta=nomeConta
@@ -22,3 +22,7 @@ class dividas:
 
     def getValorConta(self):
         return self.valorConta
+
+
+    def FaturaMensal(self):
+        return self.getValorConta()+(self.getValorConta()*self.percentualDeNegocio)

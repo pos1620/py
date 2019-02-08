@@ -1,9 +1,15 @@
 #coding:utf-8
-#from empresarial import conta;
-from empresarial.empresas import empresas;
-from empresarial.conta import conta;
-from empresarial.pessoa import pessoa;
+from empresarial import empresas,conta,pessoa;
 from Pessoal.dividas import dividas;
+import os;
+import socket
+import sys;
+
+
+#from empresarial import conta;
+#from empresarial import empresas;
+#from empresarial.conta import conta;
+#from empresarial.pessoa import pessoa;
 
 #from empresarial.* import *;
 #import sys
@@ -11,9 +17,9 @@ from Pessoal.dividas import dividas;
 #from Pessoal.dividas
 
 d1 = dividas();
-p1 = pessoa();
-emp = empresas();
-c1 = conta();
+p1 = pessoa.pessoa();
+emp = empresas.empresas();
+c1 = conta.conta();
 diasUteis = 30;
 diaria = 50.00;
 
@@ -21,15 +27,16 @@ diaria = 50.00;
 
 def cad(ob):
     if ob.__class__.__name__ == "conta":
+        print sys.platform
         # Users inormation
         # p1.setNome("alxsy mostovik")
         p1.setNome(raw_input("Nome do Usuario:"))
-        p1.setEmail(raw_input("Email do Usuario:"))
+        #p1.setEmail(raw_input("Email do Usuario:"))
         # Account Information
         c1.setSalario(float(raw_input("Ganho mensal do Investidor:")));
         c1.setInvestimento(float(raw_input("Investimental mensal do Investidor:")));
         c1.setMonths(int(raw_input("quantidade de meses em investimento:")))
-        c1.setPercentualDeNegocio(float(raw_input("Percenteual de Negocio:")))
+#        c1.setPercentualDeNegocio(float(raw_input("Percenteual de Negocio:")))
         c1.setTipoConta(raw_input("Tipo de conta:"));
         d1.setNomeConta(raw_input("Tipo da Conta a Pagar:"))
         d1.setValorConta(float(raw_input("Valor da Conta a Pagar:")))
@@ -44,28 +51,34 @@ def cad(ob):
         emp.setSalario(80000.00);
         emp.setInvestimento(2500.00);
         emp.setMonths(12)
+        """
         emp.setPercentualDeNegocio(3)
+        """
         emp.setTipoConta("basica");
         diasUteis = 30;
         diaria = 50.00;
 
-cad(c1);
 
 #main
+
+cad(c1);
+if sys.platform == "win32":
+    os.system("cls")
+else:
+    os.system("clear")
 print "Welcome to Economiester,Gestão Financeira"
-print "Nome:"+p1.getNome()+\
+
+
+print "\nNome:"+p1.getNome()+\
       "\nEmail:"+p1.getEmail()
-print "salario:%.2f" %c1.getSalario()+ \
-      "Saldo:%.2f"%(c1.getSalario()-d1.getValorConta())+\
-      "\ninvestimento:%.2f" %c1.getInvestimento() + \
-      "\nlucro em " + str(c1.getMonths()) + " meses:%.2f"%(c1.getSalario() - c1.getInvestimento()) + \
-      "\nfaturamento mensal:%.2f" % ((c1.getSalario() - c1.getInvestimento()) / c1.getMonths());
 
+print "\nsalario:%.2f"%c1.getSalario()+ \
+      "\ninvestimento:%.2f"%c1.getInvestimento()+\
+      "\nlucro em "+str(c1.getMonths())+" meses: %.2f"%(c1.getInvestimento()*c1.getMonths()) + \
+      "\nfaturamento mensal:%.2f"%(c1.getInvestimento()*c1.getMonths() / diasUteis)
 
-
-
-
-
+c1.setSalario(c1.getSalario()-c1.getInvestimento()- d1.getValorConta())
+print "\nSaldo:%.2f" % c1.getSalario()
 
 #user
 #print str(c1.months)+" meses,equivalente a "+str(c1.months*diasUteis)+" diasUteis,onde tudo pode occurer!";
@@ -81,4 +94,4 @@ if (((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30<diaria):
 else:
     print "quem sabe pode valer a pena!";
 """
-
+print "salario:%.2f"%c1.getSalario();

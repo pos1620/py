@@ -1,10 +1,9 @@
 class conta:
     salario=None;
     investimento=None;
-    percentualDeNegocio=1;
+    percentualDeNegocio=3/100;
     months="";
     tipoConta=None;
-    tesouro=(3/100)
 
     def __init__(self,salario,investimento,percentual,months,tipoConta):
         self.salario=salario;
@@ -72,7 +71,7 @@ class conta:
 
 
     def getTesouroDireto(self):
-        return (self.getInvestimento()+(self.getInvestimento()*self.tesouro));
+        return (self.getInvestimento()+(self.getInvestimento()*self.percentualDeNegocio));
 
     def getCDI(self):
         return
