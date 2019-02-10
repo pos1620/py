@@ -1,10 +1,10 @@
 class conta:
-    salario=None;
-    investimento=None;
-    percentualDeNegocio=3/100;
+    salario=0.0;
+    investimento=0.0;
+    percentualDeNegocio=3/100.0;
     months="";
     tipoConta=None;
-
+    tesouro=5.0;
     def __init__(self,salario,investimento,percentual,months,tipoConta):
         self.salario=salario;
         self.investimento=investimento;
@@ -43,13 +43,13 @@ class conta:
         self.PercentualDeNegocio = PercentualDeNegocio;
 
     def getPercentualDeNegocio(self):
-        return self.PercentualDeNegocio;
+        return self.percentualDeNegocio;
 
     def setMonths(self,months):
         self.months=months
 
     def getMonths(self):
-        return self.months;
+        return self.months-1;
 
     def setTipoConta(self, tipoConta):
         self.tipoConta = tipoConta;
@@ -58,20 +58,22 @@ class conta:
         return self.tipoConta;
 
 
-    def getLP(self):
-        return self.getInvestimento()*self.getPercentualDeNegocio()/100;
+    def setTesouro(self,tesouro):
+        self.tesouro=tesouro
 
-    def Trial(self):
-        return (self.getLP()+self.getSalario());
-
-
-    def DiasInvest(self,dias):
-        return self.getMonths()*dias;
-
-
+    def getTesouro(self):
+        return self.tesouro
 
     def getTesouroDireto(self):
-        return (self.getInvestimento()+(self.getInvestimento()*self.percentualDeNegocio));
+        #self.setTesouro(self.getInvestimento()+(self.getInvestimento() * self.getPercentualDeNegocio()));
+        tesouroD+=self.getTesouro()
+        return tesouroD
+
+
+
+    def SimuladortTesouroDireto(self):
+        TesouroDireto=self.getInvestimento()+(self.getInvestimento()*self.getPercentualDeNegocio());
+        return TesouroDireto
 
     def getCDI(self):
         return
@@ -79,5 +81,12 @@ class conta:
     def getCDB(self):
         return
 
-    def getCELIC(self):
+    def getSELIC(self):
         return
+
+    def JuroS(self):
+        juro=self.getInvestimento()*self.getMonths()*self.getPercentualDeNegocio()
+        montante=juro*self.getInvestimento()
+        return montante;
+
+    #def JuroC(self):

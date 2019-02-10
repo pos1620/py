@@ -22,12 +22,13 @@ emp = empresas.empresas();
 c1 = conta.conta();
 diasUteis = 30;
 diaria = 50.00;
-
-
+prct=7.5/100.0
 
 def cad(ob):
     if ob.__class__.__name__ == "conta":
         print sys.platform
+        print prct
+
         # Users inormation
         # p1.setNome("alxsy mostovik")
         p1.setNome(raw_input("Nome do Usuario:"))
@@ -74,8 +75,9 @@ print "\nNome:"+p1.getNome()+\
 
 print "\nsalario:%.2f"%c1.getSalario()+ \
       "\ninvestimento:%.2f"%c1.getInvestimento()+\
-      "\nlucro em "+str(c1.getMonths())+" meses: %.2f"%(c1.getInvestimento()*c1.getMonths()) + \
-      "\nfaturamento mensal:%.2f"%(c1.getInvestimento()*c1.getMonths() / diasUteis)
+      "\nlucro em "+str(c1.getMonths())+" meses: %.2f"%(c1.getTesouroDireto()*c1.getMonths()) + \
+      "\nfaturamento Mensal com TesouroDireto:%.2f"%c1.getTesouroDireto()+ \
+      "\nfaturamento Diario:%.2f"%(c1.getInvestimento()*c1.getMonths() / diasUteis)
 
 c1.setSalario(c1.getSalario()-c1.getInvestimento()- d1.getValorConta())
 print "\nSaldo:%.2f" % c1.getSalario()
