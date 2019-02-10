@@ -4,7 +4,7 @@ class conta:
     percentualDeNegocio=3/100.0;
     months="";
     tipoConta=None;
-    tesouro=5.0;
+    tesouro=0.0;
     def __init__(self,salario,investimento,percentual,months,tipoConta):
         self.salario=salario;
         self.investimento=investimento;
@@ -57,7 +57,6 @@ class conta:
     def getTipoConta(self):
         return self.tipoConta;
 
-
     def setTesouro(self,tesouro):
         self.tesouro=tesouro
 
@@ -65,11 +64,9 @@ class conta:
         return self.tesouro
 
     def getTesouroDireto(self):
-        #self.setTesouro(self.getInvestimento()+(self.getInvestimento() * self.getPercentualDeNegocio()));
-        tesouroD+=self.getTesouro()
-        return tesouroD
-
-
+        self.setTesouro(self.getInvestimento()+(self.getInvestimento() * self.getPercentualDeNegocio()))
+        self.tesouro += self.getTesouro()
+        return self.getTesouro()
 
     def SimuladortTesouroDireto(self):
         TesouroDireto=self.getInvestimento()+(self.getInvestimento()*self.getPercentualDeNegocio());
@@ -89,4 +86,5 @@ class conta:
         montante=juro*self.getInvestimento()
         return montante;
 
-    #def JuroC(self):
+    def JuroC(self):
+        return

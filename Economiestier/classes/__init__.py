@@ -75,9 +75,13 @@ print "\nNome:"+p1.getNome()+\
 
 print "\nsalario:%.2f"%c1.getSalario()+ \
       "\ninvestimento:%.2f"%c1.getInvestimento()+\
-      "\nlucro em "+str(c1.getMonths())+" meses: %.2f"%(c1.getTesouroDireto()*c1.getMonths()) + \
+      "\nlucro estimado ao fim do prazo:%.2f"%(c1.getTesouroDireto()*c1.getMonths()) + \
       "\nfaturamento Mensal com TesouroDireto:%.2f"%c1.getTesouroDireto()+ \
-      "\nfaturamento Diario:%.2f"%(c1.getInvestimento()*c1.getMonths() / diasUteis)
+      "\nfaturamento Diario:%.2f"%(c1.JuroS()*c1.getMonths() / diasUteis)
+
+print "lucro estimado ao fim do prazo:%.2f"%(c1.JuroS()*c1.getMonths()) + \
+      "\nfaturamento Mensal com JurosSimples:%.2f"%c1.JuroS()+ \
+      "\nfaturamento Diario:%.2f"%(c1.JuroS()*c1.getMonths() / diasUteis)
 
 c1.setSalario(c1.getSalario()-c1.getInvestimento()- d1.getValorConta())
 print "\nSaldo:%.2f" % c1.getSalario()
