@@ -22,5 +22,19 @@ java construtor com this apenaas
 +
 =
 0
+
+    # user
+    # print str(c1.months)+" meses,equivalente a "+str(c1.months*diasUteis)+" diasUteis,onde tudo pode occurer!";
+    # print "sinceramente!,pessimo investimento" if (((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30<diaria)else"quem sabe pode valer a pena!";
+
 '''
+
+# company
+
+"""
+if (((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30<diaria):
+    print d1.getNome()
+else:
+    print "quem sabe pode valer a pena!";
+"""
 

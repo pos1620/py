@@ -3,7 +3,8 @@ class trabalhos:
     termino=None;
     inicio=None;
     tempo=None;
-
+    veiculo=2;
+    aluguel = 350
 
     def __init__(self,valor,inicio,termino):
         self.valor=valor;
@@ -45,8 +46,21 @@ class trabalhos:
     def getTempoo(self):
         return self.tempo
 
+    def setAluguel(self, aluguel):
+        self.aluguel = aluguel;
 
+    def getAluguel(self):
+        return self.aluguel;
 
+    def setVeiculo(self, veiculo):
+        self.veiculo = veiculo;
+
+    def getVeiculo(self):
+        return self.veiculo;
 
     def TempoServico(self):
         return (self.getTermino()-self.getInicio())
+
+    #Alugel pickup
+    def Aluguel(self):
+        return (self.getVeiculo()*self.getAluguel());

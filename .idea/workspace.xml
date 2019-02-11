@@ -4,6 +4,8 @@
     <list default="true" id="d7701e42-91aa-41a2-8099-f3ed75be8aaa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Economiestier/classes/__init__.py" afterPath="$PROJECT_DIR$/Economiestier/classes/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Economiestier/classes/empresarial/conta.py" afterPath="$PROJECT_DIR$/Economiestier/classes/empresarial/conta.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Economiestier/classes/empresarial/trabalhos.py" afterPath="$PROJECT_DIR$/Economiestier/classes/empresarial/trabalhos.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Economiestier/classes/test/comments.py" afterPath="$PROJECT_DIR$/Economiestier/classes/test/comments.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,13 +20,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Economiestier/classes/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
+            <state relative-caret-position="215">
+              <caret line="84" column="53" lean-forward="false" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
               <folding>
-                <element signature="e#14#60#0" expanded="true" />
+                <element signature="e#14#70#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,18 +35,18 @@
       <file leaf-file-name="pessoa.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Economiestier/classes/empresarial/pessoa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="351">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conta.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="conta.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Economiestier/classes/empresarial/conta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+            <state relative-caret-position="283">
+              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
                 <element signature="e#218#377#0" expanded="false" />
                 <element signature="e#412#537#0" expanded="false" />
@@ -56,10 +58,20 @@
                 <element signature="e#1149#1167#0" expanded="false" />
                 <element signature="e#1272#1299#0" expanded="false" />
                 <element signature="e#1337#1359#0" expanded="false" />
-                <element signature="e#1893#1899#0" expanded="false" />
-                <element signature="e#1931#1937#0" expanded="false" />
-                <element signature="e#1971#1977#0" expanded="false" />
+                <element signature="e#2144#2150#0" expanded="false" />
+                <element signature="e#2182#2188#0" expanded="false" />
+                <element signature="e#2222#2228#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trabalhos.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Economiestier/classes/empresarial/trabalhos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,7 +104,7 @@
       <file leaf-file-name="comments.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Economiestier/classes/test/comments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="334">
               <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
               <folding />
             </state>
@@ -111,6 +123,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dias</find>
+      <find>valo</find>
+      <find>somando</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,11 +142,12 @@
         <option value="$PROJECT_DIR$/Economiestier/classes/pessoa.py" />
         <option value="$PROJECT_DIR$/Economiestier/classes/FinaciaPessoa/dividas.py" />
         <option value="$PROJECT_DIR$/Economiestier/classes/Pessoal/__init__.py" />
-        <option value="$PROJECT_DIR$/Economiestier/classes/test/comments.py" />
         <option value="$PROJECT_DIR$/Economiestier/classes/Pessoal/dividas.py" />
         <option value="$PROJECT_DIR$/Economiestier/classes/empresarial/pessoa.py" />
-        <option value="$PROJECT_DIR$/Economiestier/classes/empresarial/conta.py" />
+        <option value="$PROJECT_DIR$/Economiestier/classes/test/comments.py" />
+        <option value="$PROJECT_DIR$/Economiestier/classes/empresarial/trabalhos.py" />
         <option value="$PROJECT_DIR$/Economiestier/classes/__init__.py" />
+        <option value="$PROJECT_DIR$/Economiestier/classes/empresarial/conta.py" />
       </list>
     </option>
   </component>
@@ -450,7 +465,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#60#0" expanded="true" />
+            <element signature="e#14#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -507,7 +522,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#60#0" expanded="true" />
+            <element signature="e#14#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -564,7 +579,7 @@
         <state relative-caret-position="85">
           <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding>
-            <element signature="e#14#60#0" expanded="true" />
+            <element signature="e#14#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -621,7 +636,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#60#0" expanded="true" />
+            <element signature="e#14#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -678,7 +693,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#60#0" expanded="true" />
+            <element signature="e#14#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -756,6 +771,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Economiestier/classes/empresarial/empresas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Economiestier/classes/Pessoal/dividas.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
@@ -769,34 +792,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Economiestier/classes/empresarial/empresas.py">
+    <entry file="file://$PROJECT_DIR$/Economiestier/classes/test/comments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="334">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Economiestier/classes/empresarial/pessoa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="351">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Economiestier/classes/test/comments.py">
+    <entry file="file://$PROJECT_DIR$/Economiestier/classes/empresarial/trabalhos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Economiestier/classes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="84" column="53" lean-forward="false" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
+          <folding>
+            <element signature="e#14#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Economiestier/classes/empresarial/conta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        <state relative-caret-position="283">
+          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
             <element signature="e#218#377#0" expanded="false" />
             <element signature="e#412#537#0" expanded="false" />
@@ -808,19 +841,9 @@
             <element signature="e#1149#1167#0" expanded="false" />
             <element signature="e#1272#1299#0" expanded="false" />
             <element signature="e#1337#1359#0" expanded="false" />
-            <element signature="e#1893#1899#0" expanded="false" />
-            <element signature="e#1931#1937#0" expanded="false" />
-            <element signature="e#1971#1977#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Economiestier/classes/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-          <folding>
-            <element signature="e#14#60#0" expanded="true" />
+            <element signature="e#2144#2150#0" expanded="false" />
+            <element signature="e#2182#2188#0" expanded="false" />
+            <element signature="e#2222#2228#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,5 @@
 #coding:utf-8
-from empresarial import empresas,conta,pessoa;
+from empresarial import empresas,conta,pessoa,trabalhos;
 from Pessoal.dividas import dividas;
 import os;
 import socket
@@ -20,10 +20,11 @@ d1 = dividas();
 p1 = pessoa.pessoa();
 emp = empresas.empresas();
 c1 = conta.conta();
+t1= trabalhos.trabalhos();
 diasUteis = 30;
 diaria = 50.00;
 prct=7.5/100.0
-
+c1.setTesouro(5)
 def cad(ob):
     if ob.__class__.__name__ == "conta":
         print sys.platform
@@ -60,44 +61,32 @@ def cad(ob):
         diaria = 50.00;
 
 
+def imp(ob):
+    if sys.platform == "win32":
+        os.system("cls")
+    else:
+        os.system("cls")
+    print "Welcome to Economiester,Gestão Financeira"
+    print "\nNome:" + p1.getNome() + \
+          "\nEmail:" + p1.getEmail()
+
+    print "\nsalario:%.2f" % c1.getSalario() + \
+          "\ninvestimento:%.2f" % c1.getInvestimento() + \
+          "\nlucro estimado ao fim do prazo:%.2f" % (c1.getTesouroDireto() * c1.getMonths()) + \
+          "\nfaturamento Mensal com TesouroDireto:%.2f" % c1.getTesouroDireto() + \
+          "\nfaturamento Diario:%.2f" % (c1.JuroS() * c1.getMonths() / diasUteis)
+
+    print "lucro estimado ao fim do prazo:%.2f" % (c1.JuroS() * c1.getMonths()) + \
+          "\nfaturamento Mensal com JurosSimples:%.2f" % c1.JuroS() + \
+          "\nfaturamento Diario:%.2f" % (c1.JuroS() * c1.getMonths() / diasUteis)
+
+#c1.setSalario(c1.getSalario() - c1.getInvestimento() - d1.getValorConta())
+#print "\nSaldo:%.2f" % c1.getSalario();
+print "lucro com alugal de carros:%.2f"%(t1.Aluguel());
+
+    # print  "sinceramente!,pessimo investimento" if(((c1.getSalario() - c1.getInvestimento()) / c1.getMonths()) / 30 < diaria) else "quem sabe pode valer a pena!";
+   # print "cada dia equivale a {:.2f}".format(((c1.getSalario() - c1.getInvestimento()) / c1.getMonths()) / 30);
+
 #main
-
 cad(c1);
-if sys.platform == "win32":
-    os.system("cls")
-else:
-    os.system("clear")
-print "Welcome to Economiester,Gestão Financeira"
-
-
-print "\nNome:"+p1.getNome()+\
-      "\nEmail:"+p1.getEmail()
-
-print "\nsalario:%.2f"%c1.getSalario()+ \
-      "\ninvestimento:%.2f"%c1.getInvestimento()+\
-      "\nlucro estimado ao fim do prazo:%.2f"%(c1.getTesouroDireto()*c1.getMonths()) + \
-      "\nfaturamento Mensal com TesouroDireto:%.2f"%c1.getTesouroDireto()+ \
-      "\nfaturamento Diario:%.2f"%(c1.JuroS()*c1.getMonths() / diasUteis)
-
-print "lucro estimado ao fim do prazo:%.2f"%(c1.JuroS()*c1.getMonths()) + \
-      "\nfaturamento Mensal com JurosSimples:%.2f"%c1.JuroS()+ \
-      "\nfaturamento Diario:%.2f"%(c1.JuroS()*c1.getMonths() / diasUteis)
-
-c1.setSalario(c1.getSalario()-c1.getInvestimento()- d1.getValorConta())
-print "\nSaldo:%.2f" % c1.getSalario()
-
-#user
-#print str(c1.months)+" meses,equivalente a "+str(c1.months*diasUteis)+" diasUteis,onde tudo pode occurer!";
-#print "sinceramente!,pessimo investimento" if (((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30<diaria)else"quem sabe pode valer a pena!";
-print  (((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30<diaria) and "sinceramente!,pessimo investimento" or "quem sabe pode valer a pena!";
-print "cada dia equivale a {:.2f}".format(((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30);
-
-#company
-
-"""
-if (((c1.getSalario() - c1.getInvestimento()) / c1.getMonths())/30<diaria):
-    print d1.getNome()
-else:
-    print "quem sabe pode valer a pena!";
-"""
-print "salario:%.2f"%c1.getSalario();
+imp(c1);
