@@ -75,6 +75,7 @@ class conta:
 
     def getTesouroDireto(self):
         #self.setTesouro(self.getInvestimento() + (self.getInvestimento() * self.getPercentualDeNegocio()))
+        self.setTesouro(5)
         return self.getTesouro()+ (self.getInvestimento() * self.getPercentualDeNegocio())
 
 
