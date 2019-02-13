@@ -4,7 +4,7 @@ class conta:
     percentualDeNegocio=3/100.0;
     months="";
     tipoConta=None;
-    tesouro=0.0;
+    tesouro=5.0;
     def __init__(self,salario,investimento,percentual,months,tipoConta):
         self.salario=salario;
         self.investimento=investimento;
@@ -75,8 +75,8 @@ class conta:
 
     def getTesouroDireto(self):
         #self.setTesouro(self.getInvestimento() + (self.getInvestimento() * self.getPercentualDeNegocio()))
-        self.setTesouro(5)
-        return self.getTesouro()+ (self.getInvestimento() * self.getPercentualDeNegocio())
+
+       return self.getTesouro()+ (self.getInvestimento() * self.getPercentualDeNegocio())
 
 
     def SimuladortTesouroDireto(self):
