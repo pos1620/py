@@ -24,7 +24,7 @@ t1= trabalhos.trabalhos();
 diasUteis = 30;
 diaria = 50.00;
 prct=7.5/100.0
-c1.setTesouro(5)
+#c1.setTesouro(5)
 def cad(ob):
     if ob.__class__.__name__ == "conta":
         print sys.platform
@@ -40,8 +40,6 @@ def cad(ob):
         c1.setMonths(int(raw_input("quantidade de meses em investimento:")))
 #        c1.setPercentualDeNegocio(float(raw_input("Percenteual de Negocio:")))
         c1.setTipoConta(raw_input("Tipo de conta:"));
-        d1.setNomeConta(raw_input("Tipo da Conta a Pagar:"))
-        d1.setValorConta(float(raw_input("Valor da Conta a Pagar:")))
 
 
     else:
