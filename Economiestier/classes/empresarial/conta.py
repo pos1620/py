@@ -57,29 +57,17 @@ class conta:
     def getTipoConta(self):
         return self.tipoConta;
 
+    def setTesouro(self,t):
+        self.tesouro+=t
+    
     def getTesouro(self):
         return self.tesouro
 
-
-    def setTesouro(self,tesouro):
-        self.tesouro += tesouro
-
-
-    '''
     def getTesouroDireto(self):
-        self.setTesouro(self.getInvestimento()+(self.getInvestimento() * self.getPercentualDeNegocio()))
-        self.tesouro += self.getTesouro()
+        #self.setTesouro(self.getInvestimento()+(self.getInvestimento() * self.getPercentualDeNegocio()))
         return self.getTesouro()
-'''
 
-
-    def getTesouroDireto(self):
-        self.setTesouro(self.getInvestimento()+(self.getInvestimento() * self.getPercentualDeNegocio()))
-        return self.getTesouro()/2
-
-    def SimuladortTesouroDireto(self):
-        simulador=self.getInvestimento()+(self.getInvestimento()*self.getPercentualDeNegocio());
-        return simulador;    
+   
 
     def getCDI(self):
         return

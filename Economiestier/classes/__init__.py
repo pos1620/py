@@ -38,50 +38,49 @@ t1= trabalhos.trabalhos();
 
 
 diasUteis = 30;
-diaria = 50.00;
-prct=7.5/100.0
-#c1.setTesouro(5)
+diaria=None;
 def cad(ob):
     if ob.__class__.__name__ == "conta":
-
+        diaria=10.00
 
         # Users inormation
         # p1.setNome("alxsy mostovik")
         p1.setNome(input("Nome do Usuario:"))
-        #p1.setEmail(raw_input("Email do Usuario:"))
+        p1.setEmail(input("Email do Usuario:"))
+        p1.setPhone(input("Contato:"))
+        
         # Account Information
         c1.setSalario(float(input("Ganho mensal do Investidor:")));
         c1.setInvestimento(float(input("Investimental mensal do Investidor:")));
         c1.setMonths(int(input("quantidade de meses em investimento:")))
-#        c1.setPercentualDeNegocio(float(raw_input("Percenteual de Negocio:")))
         c1.setTipoConta(input("Tipo de conta:"));
+        if c1.getTipoConta()=="basica":
+            c1.setTesouro(15)
+        else:
+            c1.setTesouro(55);        
 
 
     else:
         # Companies Information
-        emp.setNome("GoldxEngenharia");
-        emp.setPhone("98997-8887");
-        emp.setEmail("GoldxEngenharia@gmail.com");
+        diaria=50.00
+        emp.setNome(input("Nome da Enpresa:"))
+        emp.setEmail(input("Email da Enpresa:"))
+        emp.setPhone(input("Contato:"))
         # Account Information
-        emp.setSalario(80000.00);
-        emp.setInvestimento(2500.00);
-        emp.setMonths(12)
-        """
-        emp.setPercentualDeNegocio(3)
-        """
-        emp.setTipoConta("basica");
-        diasUteis = 30;
-        diaria = 50.00;
+        emp.setSalario(float(input("Ganho mensal do Investidor:")));
+        emp.setInvestimento(float(input("Investimental mensal do Investidor:")));
+        emp.setMonths(int(input("quantidade de meses em investimento:")))
+        emp.setTipoConta(input("Tipo de conta:"));
 
+            
+        
 
+c1.setTesouro(5);
 def imp(ob):
-    if sys.platform == "win32":
-        os.system("cls")
-    else:
-        os.system("cls")
     print ("Welcome to Economiester,Gestão Financeira")
     print ("\nNome:" + p1.getNome() + \
-          "\nEmail:" + p1.getEmail())
+          "\nEmail:" + p1.getEmail()+ \
+          "\nContato:"+ p1.getPhone())
 
     print ("\nsalario:%.2f" % c1.getSalario() + \
           "\ninvestimento:%.2f" % c1.getInvestimento() + \
@@ -91,14 +90,8 @@ def imp(ob):
 
     print ("lucro estimado ao fim do prazo:%.2f" % (c1.JuroS() * c1.getMonths()) + \
           "\nfaturamento Mensal com JurosSimples:%.2f" % c1.JuroS() + \
-          "\nfaturamento Diario:%.2f" % (c1.JuroS() * c1.getMonths() / diasUteis))
-
-#c1.setSalario(c1.getSalario() - c1.getInvestimento() - d1.getValorConta())
-#print "\nSaldo:%.2f" % c1.getSalario();
-print ("lucro com alugal de carros:%.2f"%(t1.Aluguel()));
-
-    # print  "sinceramente!,pessimo investimento" if(((c1.getSalario() - c1.getInvestimento()) / c1.getMonths()) / 30 < diaria) else "quem sabe pode valer a pena!";
-   # print "cada dia equivale a {:.2f}".format(((c1.getSalario() - c1.getInvestimento()) / c1.getMonths()) / 30);
+          "\nfaturamento Diario:%.2f" % (c1.JuroS() * c1.getMonths() / diasUteis)+ \
+          "\nlucro com alugal de carros:%.2f"%(t1.AluguelComNegocio("carro")));
 
 #main
 cad(c1);

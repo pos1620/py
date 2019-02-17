@@ -62,5 +62,8 @@ class trabalhos:
         return (self.getTermino()-self.getInicio())
 
     #Alugel pickup
-    def Aluguel(self):
-        return (self.getVeiculo()*self.getAluguel());
+    def AluguelComNegocio(self,tipo):
+        if tipo =="carro":
+            return (self.getVeiculo()*self.getAluguel());
+        else:
+            return 1-1
