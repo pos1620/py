@@ -1,16 +1,22 @@
+#-------------------------------------------------------------------------------
+# Name:        module1
+# Purpose:
+#
+# Author:      home
+#
+# Created:     17/02/2019
+# Copyright:   (c) home 2019
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+
 class conta:
-    salario=0;
-    investimento=0;
-    percentualDeNegocio=3/100;
+    salario=0.0;
+    investimento=0.0;
+    percentualDeNegocio=3/100.0;
     months="";
     tipoConta=None;
     tesouro=0;
-    def __init__(self,salario,investimento,percentual,months,tipoConta):
-        self.salario=salario;
-        self.investimento=investimento;
-        self.percentual=percentual;
-        self.months=months;
-        self.tipoConta=tipoConta;
+
 
 
     def __init__(self):
@@ -74,12 +80,11 @@ class conta:
 
 
     def getTesouroDireto(self):
-        self.setTesouro(self.getInvestimento()+(self.getInvestimento() * self.getPercentualDeNegocio()))
-        return self.getTesouro()/2
+        return self.tesouro()
 
     def SimuladortTesouroDireto(self):
-        simulador=self.getInvestimento()+(self.getInvestimento()*self.getPercentualDeNegocio());
-        return simulador;    
+        TesouroDireto=self.getInvestimento()+(self.getInvestimento()*self.getPercentualDeNegocio());
+        return TesouroDireto
 
     def getCDI(self):
         return
@@ -92,8 +97,8 @@ class conta:
 
     def JuroS(self):
         juro=self.getInvestimento()*self.getMonths()*self.getPercentualDeNegocio()
-        montante=juro+self.getInvestimento()
+        montante=juro*self.getInvestimento()
         return montante;
 
     def JuroC(self):
-        return self.getTesouro()*2
+        return

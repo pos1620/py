@@ -1,4 +1,4 @@
-from conta import conta;
+from empresarial.conta import conta;
 class pessoa(conta):
     nome=None;
     endereco=None;
