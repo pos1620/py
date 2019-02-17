@@ -75,7 +75,6 @@ def cad(ob):
             
         
 
-c1.setTesouro(5);
 def imp(ob):
     print ("Welcome to Economiester,Gestão Financeira")
     print ("\nNome:" + p1.getNome() + \
